@@ -1,0 +1,19 @@
+{
+  "name": "0_portfolio_202103",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website Built With Html CSS Js Swiper ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohye-lee/portfolio_2021_03.git"
+  },
+  "author": "Sohye Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohye-lee/portfolio_2021_03/issues"
+  },
+  "homepage": "https://github.com/sohye-lee/portfolio_2021_03#readme"
+}

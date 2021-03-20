@@ -1,0 +1,58 @@
+:root {
+
+    /* COLOR */
+    --White: #FFFFFF;
+    --Black: #0E0E0F;
+    --Gray: #707070;
+    --DarkGray: #474646;
+    --Highlight: #34F5E6;
+
+    /* FONT FAMILY */
+    --FontMain: 'SF Pro Display', sans-serif;
+    --FontSub: 'SF Compact', sans-serif;
+
+    /* FONT SIZES */
+    --FontHead: 7rem;
+    --FontMedium: 2.5rem;
+    --FontExplain: 2.3rem;
+    --FontItem: 2rem;
+
+    /* FONT WEIGHT */
+    --FontHeavy: 700;
+    --FontBold: 600;
+    --FontRegular: 400;
+    --FontLight: 200;
+
+    /* TRANSITION  */
+    --Transition: all 350ms ease;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--Black);
+}
+
+h1 {
+    font-size: var(--FontHead);
+}
+
+button {
+    border: 1px solid var(--DarkGray);
+    background-color: var(--DarkGray);
+    color: var(--White);
+    text-decoration: lowercase;
+    transition: var(--Transition);
+}
+
+button:hover {
+    border: 1px solid var(--White);
+    background-color: var(--White);
+    color: var(--Black);
+}
