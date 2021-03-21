@@ -98,7 +98,7 @@ function sphere(canvas, skills, counts, options) {
             // convert to cartesian and then draw.
             const alpha = 0.6 + 0.4 * (x/radius);
             const size = fontSize + 2 + 5*(x/radius);
-            if (textColor === 'white') {
+            if (colorMode === 'black') {
                 ctx.fillStyle = `rgba(255,255,255,${alpha})`;
             } else {
                 ctx.fillStyle = `rgba(0,0,0,${alpha})`;

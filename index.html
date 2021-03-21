@@ -26,10 +26,19 @@
                 
             </ul>
             <div class="header__burger">
-                <div class="bgchange"></div>
-                <div class="bgchange"></div>
+                <div class="bgchange burger1"></div>
+                <div class="bgchange burger2"></div>
             </div>
         </div>
+        <ul class="header__hidden">
+            <li class="item"><a href="#projects">PROJECTS</a></li>
+            <li class="item"><a href="#about">ABOUT</a></li>
+            <li class="item"><a href="/asset/img/resume.pdf" download>RÉSUMÉ</a></li>
+            <li class="item"><a href="">CONNECT</a></li>
+            <!-- <li class="item header__toggler borderchange row left align-center">
+                <div class="bgchange"></div>
+            </li> -->
+        </ul>
     </nav>
 
     <!-- ###################### MAIN PAGE ###################### -->
@@ -51,49 +60,117 @@
     </section>
 
     <!-- ###################### PROJECTS PAGE ###################### -->
+
     <section id="projects" class="section">
-        <div class="section__content">
-            <div class="section__title row center">
-                <h1 class="projects__title">projects</h1>
+        <div class="section__title row center">
+            <h1 class="projects__title">projects</h1>
+        </div>
+
+        <!-- PROJECT 1 -->
+        <div class="project__details right">
+            <div class="project__num row right">
+                <h3 class="need__devider item">project 1</h3>
+                <h3 class="item">pen</h3>
             </div>
-            <div class="project__details right">
-                <div class="project__num row right">
-                    <h3 class="need__devider item">project 1</h3>
-                    <h3 class="item">pen</h3>
-                </div>
-                <div class="bar short bgchange"></div>
-                <h2 class="project__title">
-                    Full Stack Blog Platform
-                </h2>
-                <div class="bar long bgchange"></div>
-                <div class="project__skills row right">
-                    <h3 class="item">REACT</h3>
-                    <h3 class="item">NODEJS</h3>
-                    <h3 class="item">EXPRESS</h3>
-                    <h3 class="item">MONGODB</h3>
-                </div>
-                <div class="bar long bgchange"></div>
-                <h4 class="project__description right">
-                    Authentication.  Admin View.  User’s View. 
-                    Login & Register.  Like & Follow & Comments.  
-                    Fully Responsive. 
-                </h4>
+            <div class="bar short bgchange"></div>
+            <h2 class="project__title">
+                Full Stack Blog Platform
+            </h2>
+            <div class="bar long bgchange"></div>
+            <div class="project__skills row right">
+                <h3 class="item">REACT</h3>
+                <h3 class="item">NODEJS</h3>
+                <h3 class="item">EXPRESS</h3>
+                <h3 class="item">MONGODB</h3>
             </div>
-            <div class="project__carousel row">
-                <div class="project__image">
-                    <img src="/asset/img/project-taude/web1.png">
-                    <div class="project__comment">front page</div>
-                </div>
-                <div class="project__image">
-                    <img src="/asset/img/project-taude/web1.png">
-                    <div class="project__comment">front page</div>
-                </div>
-                <div class="project__image">
-                    <img src="/asset/img/project-taude/web1.png">
-                    <div class="project__comment">front page</div>
-                </div>
+            <div class="bar long bgchange"></div>
+            <h4 class="project__description right">
+                Authentication.  Login & Register. <br>
+                Admin View.  User’s View. <br>
+                Like & Follow & Comments. <br>
+                Fully Responsive. 
+            </h4>
+            <div class="row right">
+                <button class="project__button">
+                    <a href="https://www.github.com/sohye-lee" class="item"> GITHUB</a>
+                </button>
+                <button class="project__button margin__left">
+                    <a href="https://www.github.com/sohye-lee" class="item">SEE LIVE</a>
+                </button>
             </div>
         </div>
+        <div class="project__carousel row">
+            <div class="project__image">
+                <img src="/asset/img/project-taude/web1.png">
+                <div class="project__comment">front page</div>
+            </div>
+            <div class="project__image">
+                <img src="/asset/img/project-taude/web1.png">
+                <div class="project__comment">front page</div>
+            </div>
+            <div class="project__image">
+                <img src="/asset/img/project-taude/web1.png">
+                <div class="project__comment">front page</div>
+            </div>
+        </div>
+
+
+        <!-- PROJECT 2 -->
+        <div class="project__details">
+            <div class="project__num row left">
+                <h3 class="need__devider item">project 2</h3>
+                <h3 class="item">taude</h3>
+            </div>
+            <div class="bar short bgchange"></div>
+            <h2 class="project__title">
+                Full Stack E-commerce Store
+            </h2>
+            <div class="bar long bgchange"></div>
+            <div class="project__skills row left">
+                <h3 class="item">REACT</h3>
+                <h3 class="item">NODEJS</h3>
+                <h3 class="item">EXPRESS</h3>
+                <h3 class="item">MONGODB</h3>
+            </div>
+            <div class="bar long bgchange"></div>
+            <h4 class="project__description left">
+                Authentication.  Login & Register. <br>
+                Admin Access. Customer’s Access. <br>
+                Products & Users Management. <br>
+                Cart & Shipping Info & Payment. <br>
+                Fully Responsive. 
+            </h4>
+            <div class="row left">
+                <button class="project__button margin__right">
+                    <a href="https://www.github.com/sohye-lee" class="item"> GITHUB</a>
+                </button>
+                <button class="project__button margin__left">
+                    <a href="https://www.github.com/sohye-lee" class="item">SEE LIVE</a>
+                </button>
+            </div>
+        </div>
+        <div class="project__carousel row">
+            <div class="project__image">
+                <img src="/asset/img/project-taude/web1.png">
+                <div class="project__comment">front page</div>
+            </div>
+            <div class="project__image">
+                <img src="/asset/img/project-taude/web2.png">
+                <div class="project__comment">front page</div>
+            </div>
+            <div class="project__image">
+                <img src="/asset/img/project-taude/web3.png">
+                <div class="project__comment">front page</div>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <!-- PROJECT 4 -->
+
+    </section>
+
+    <section id="about" class="section">
+        
     </section>
 
     <script src="/asset/js/gsap.min.js"></script>
