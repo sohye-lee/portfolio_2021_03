@@ -6,11 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link type="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="asset/css/styles.css">
     <title>Sohye Lee, Developer</title>
 </head>
 <body>
-    
-    <script src="asset/js/main.js"></script>
+
+    <!-- ###################### NAV BAR ###################### -->
+    <nav class="header row center">
+        <div class="header__content row between">
+            <a href="/"><div class="header__logo row center align-center"><h2 class="logo__center">S</h2><div class="logo__sphere bgchange">&nbsp;</div></div></a>
+            <ul class="header__items row right">
+                <li class="header__item"><a href="#projects">PROJECTS</a></li>
+                <li class="header__item"><a href="#about">ABOUT</a></li>
+                <li class="header__item"><a href="/asset/img/resume.pdf" download>RÉSUMÉ</a></li>
+                <li class="header__item"><a href="">CONNECT</a></li>
+                <li class="header__item header__toggler borderchange row left align-center">
+                    <div class="bgchange"></div>
+                </li>
+                
+            </ul>
+            <div class="header__burger">
+                <div class="bgchange"></div>
+                <div class="bgchange"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ###################### MAIN PAGE ###################### -->
+    <section class="section row center align-center" id="main">
+        <div class="section__content row between align-center">
+            <div class="main__title">
+                <h1 class="section__title">Hello, <br> I'm Sohye Lee</h1>
+                <h4>Web Developer based in VA, USA</h4>
+                <a href="/asset/img/resume.pdf" download><button class="main__button">download résumé</button></a>
+                <div class="row left">
+                    <p class="item need__devider"><a href="https://www.linkedin.com/in/sohyelee" target="_blank">LINKEDIN</a></p>
+                    <p class="item"><a href="https://www.github.com/sohye-lee" target="_blank">GITHUB</a></p>
+                </div>
+            </div>
+            <canvas id="canvas__float" class="colorchange">
+            </canvas>
+        </div>
+        <div class="main__arrow"></div>
+    </section>
+
+    <!-- ###################### PROJECTS PAGE ###################### -->
+    <section id="projects" class="section">
+        <div class="section__content">
+            <div class="section__title row center">
+                <h1 class="projects__title">projects</h1>
+            </div>
+            <div class="project__details right">
+                <div class="project__num row right">
+                    <h3 class="need__devider item">project 1</h3>
+                    <h3 class="item">pen</h3>
+                </div>
+                <div class="bar short bgchange"></div>
+                <h2 class="project__title">
+                    Full Stack Blog Platform
+                </h2>
+                <div class="bar long bgchange"></div>
+                <div class="project__skills row right">
+                    <h3 class="item">REACT</h3>
+                    <h3 class="item">NODEJS</h3>
+                    <h3 class="item">EXPRESS</h3>
+                    <h3 class="item">MONGODB</h3>
+                </div>
+                <div class="bar long bgchange"></div>
+                <h4 class="project__description right">
+                    Authentication.  Admin View.  User’s View. 
+                    Login & Register.  Like & Follow & Comments.  
+                    Fully Responsive. 
+                </h4>
+            </div>
+            <div class="project__carousel row">
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web1.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web1.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web1.png">
+                    <div class="project__comment">front page</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/asset/js/gsap.min.js"></script>
+    <script src="/asset/js/float.js"></script>
+    <script src="/asset/js/main.js"></script>
+
 </body>
 </html>
