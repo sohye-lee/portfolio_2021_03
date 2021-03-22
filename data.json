@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "name": "HTML",
+        "score": 90
+    },
+    {
+        "id": 1,
+        "name": "CSS",
+        "score": 90
+    },
+    {
+        "id": 2,
+        "name": "JavaScript",
+        "score": 75
+    },
+    {
+        "id": 3,
+        "name": "React",
+        "score": 70
+    },
+    {
+        "id": 4,
+        "name": "React Native",
+        "score": 45
+    },
+    {
+        "id": 5,
+        "name": "Redux",
+        "score": 65
+    },
+    {
+        "id": 6,
+        "name": "NodeJS",
+        "score": 50
+    },
+    {
+        "id": 7,
+        "name": "PHP",
+        "score": 20
+    },
+    {
+        "id": 8,
+        "name": "Python",
+        "score": 75
+    },
+    {
+        "id": 9,
+        "name": "R",
+        "score": 50
+    },
+    {
+        "id": 10,
+        "name": "PostgreSQL",
+        "score": 50
+    },
+    {
+        "id": 11,
+        "name": "GraphQL",
+        "score": 40
+    },
+    {
+        "id": 12,
+        "name": "Apollo",
+        "score": 30
+    },
+    {
+        "id": 13,
+        "name": "Bootstrap",
+        "score": 90
+    },
+    {
+        "id": 14,
+        "name": "Web API",
+        "score": 75
+    },
+    {
+        "id": 15,
+        "name": "Express",
+        "score": 50
+    },
+    {
+        "id": 16,
+        "name": "MongoDB",
+        "score": 50
+    },
+    {
+        "id": 17,
+        "name": "MySQL",
+        "score": 69
+    },
+    {
+        "id": 18,
+        "name": "Flask",
+        "score": 30
+    },
+    {
+        "id": 19,
+        "name": "TypeScript",
+        "score": 20
+    }
+]

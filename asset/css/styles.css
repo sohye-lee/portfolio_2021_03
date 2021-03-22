@@ -41,6 +41,7 @@
     --Max-Width: 1248px;
 
     /* Z-INDEX */
+    --Z-Below: -1;
     --Z-Basic: 1;
     --Z-Medium: 10;
     --Z-Top: 100;
@@ -79,6 +80,10 @@
 html {
     scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
 }
 
 body {
@@ -161,6 +166,10 @@ img {
     justify-content: space-between;
 }
 
+.row.around {
+    justify-content: space-around;
+}
+
 .row.left {
     justify-content: flex-start;
 }
@@ -174,6 +183,15 @@ img {
 }
 
 .row.align-bottom {
+    align-items: flex-end;
+}
+
+.column {
+    display: flex;
+    flex-direction: column
+}
+
+.column.right {
     align-items: flex-end;
 }
 
@@ -236,7 +254,7 @@ img {
 }
 
 .bar {
-    height: .15rem;
+    height: .1rem;
     margin: 1.5rem 0;
 }
 
@@ -247,6 +265,11 @@ img {
 .bar.long {
     width: 8rem;
 }
+
+.bar.xlong {
+   min-width: 30%;
+}
+
 /* ANIMATIONS */
 @keyframes rotation {
     0% {
@@ -502,11 +525,17 @@ img {
     font-size: var(--Font-Size-Xsmall);
 
 }
-
 .project__carousel {
     overflow-x: scroll;
     width: 100vw;
     margin-bottom: 9rem;
+    position: relative;
+    scroll-behavior: inherit;
+}
+
+.carousel__wrapper {
+    max-height: 100%;
+    padding: 0 3rem;
 }
 
 .project__image {
@@ -521,11 +550,163 @@ img {
 }
 
 .project__comment {
-    font-family: 'Shadows Into Light', cursive;
     font-size: var(--Font-Size-Item);
+    font-weight: var(--Font-Weight-Light);
     margin: .5rem 0;
     width: 100%;
     text-align: center;
     letter-spacing: var(--Spacing-Small);
 }
-\
+
+
+
+ /* ###################### ABOUT PAGE ######################  */
+.about__head {
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.about__titlebox {
+    border-bottom: 1px solid var(--DarkGray);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem !important;
+}
+
+.about__item {
+    width: 100%;
+    margin: 1rem 0;
+    min-height: 3rem;
+    position: relative;
+    padding-bottom: .7rem !important;
+    border-bottom: 1px dotted var(--Gray);
+}
+
+.about__title {
+    margin-bottom: 0;
+    font-size: var(--Font-Size-Medium);
+    color: var(--Gray);
+}
+
+.about__description {
+    /* color: var(--Gray) !important; */
+    opacity: 0.6;
+    transition: var(--Transition);
+    font-weight: var(--Font-Weight-Regular);
+    text-transform: uppercase;
+    font-size: var(--Font-Size-Small) !important;
+    margin-top: 1.2rem;
+}
+
+.about__description:hover {
+    /* color: var(--Highlight) !important; */
+    opacity: 1;
+
+}
+
+.about__text, .about__description {
+    margin-bottom: .5rem;
+    letter-spacing: var(--Spacing-Large);
+    /* font-weight: var(--Font-Weight-Light); */
+    font-size: var(--Font-Size-Item);
+}
+
+.about__text {
+    font-weight: var(--Font-Weight-Light);
+}
+
+.description__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.description__column * {
+    margin: 0;
+}
+
+.typing {
+    position: relative;
+}
+
+.typing {
+    margin-left: .5rem;
+}
+
+.blinking {
+    height: 1.2rem;
+    width: .4rem;
+    margin-left: .1rem;
+    animation: blinkAnimation .5s linear infinite;
+}
+
+@keyframes blinkAnimation {
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .about__item {
+        display: block;
+
+    }
+
+    .description__column {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .description__column .about__description {
+        margin-right: 1rem;
+    }
+
+}
+
+.about__bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+#canvas__skills {
+    max-width: 90vw;
+    max-height: 80vh;
+    margin: 2rem;
+}
+
+
+.tooltip {
+    margin: 2rem 0;
+}
+
+.tooltip__skill {
+    margin-right: 1rem;
+}
+
+.tooltip__graph {
+    width: 12rem;
+    height: 1.2rem;
+}
+
+.graph__inner {
+    height: 100%;
+}
+
+@media all and (max-width: 1024) {
+    #canvas__skills {
+        width: 600 !important;
+        height: 600 !important;
+    }
+}
+
+@media all and (max-width: 768) {
+    #canvas__skills {
+        width: 500 !important;
+        height: 500 !important;
+    }
+}
+

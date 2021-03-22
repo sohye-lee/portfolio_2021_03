@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="asset/css/styles.css">
+    <link rel="stylesheet" href="/asset/css/styles.css">
     <title>Sohye Lee, Developer</title>
 </head>
 <body>
@@ -99,18 +98,20 @@
                 </button>
             </div>
         </div>
-        <div class="project__carousel row">
-            <div class="project__image">
-                <img src="/asset/img/project-taude/web1.png">
-                <div class="project__comment">front page</div>
-            </div>
-            <div class="project__image">
-                <img src="/asset/img/project-taude/web1.png">
-                <div class="project__comment">front page</div>
-            </div>
-            <div class="project__image">
-                <img src="/asset/img/project-taude/web1.png">
-                <div class="project__comment">front page</div>
+        <div class="project__carousel">
+            <div class="carousel__wrapper row left">
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web1.png">
+                    <div class="project__comment item">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web1.png">
+                    <div class="project__comment item">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web1.png">
+                    <div class="project__comment item">front page</div>
+                </div>
             </div>
         </div>
 
@@ -150,17 +151,31 @@
             </div>
         </div>
         <div class="project__carousel row">
-            <div class="project__image">
-                <img src="/asset/img/project-taude/web1.png">
-                <div class="project__comment">front page</div>
-            </div>
-            <div class="project__image">
-                <img src="/asset/img/project-taude/web2.png">
-                <div class="project__comment">front page</div>
-            </div>
-            <div class="project__image">
-                <img src="/asset/img/project-taude/web3.png">
-                <div class="project__comment">front page</div>
+            <div class="carousel__wrapper row">
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web1.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web2.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web3.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web-admin1.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web-admin2.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/ipad1.jpg">
+                    <div class="project__comment">front page</div>
+                </div>
             </div>
         </div>
 
@@ -169,11 +184,61 @@
 
     </section>
 
+    <!-- ###################### ABOUT PAGE ###################### -->
     <section id="about" class="section">
-        
+        <div class="section__content">
+            <div class="about__head">
+                <div class="row between align-bottom about__item about__titlebox">
+                    <h1 class="section__title about__title "> About Me</h1>
+                    <a href="/asset/img/resume.pdf" download class="about__description">download full résumé</a>
+                </div>
+                <div class="row between align-center about__item">
+                    <h4 class="about__text row left"> I Love 
+                        <span class="typing typing1"></span>
+                        <div class="blinking bgchange"></div>
+                    </h4>
+                    <div class="description__column">
+                        <p class="about__description">Full Stack Web Developer</p>
+                        <p class="about__description"> Learning in UX/UI Design</p>
+                    </div>
+                </div>
+                <div class="row between align-bottom about__item">
+                    <h4 class="about__text row left"> I 
+                        <span class="typing typing2"></span>
+                        <div class="blinking bgchange"></div>
+                    </h4>
+                    <p class="about__description">Multi-Cultural & Open-Minded</p>
+                </div>
+                <div class="row between align-bottom about__item">
+                    <h4 class="about__text row left"> I 
+                        <span class="typing typing3"></span>
+                        <div class="blinking bgchange"></div>
+                    </h4>
+                    <p class="about__description">Interest in Arts & Data Management</p>
+                </div>
+            </div>
+            <div class="about__bubble">
+                <div class="tooltip row left">
+                    <div class="tooltip__skill item"></div>
+                    <div class="tooltip__graph">
+                        <div class="graph__inner"></div>
+                    </div>
+                </div>
+                <svg id="canvas__skills" class="row"></svg>
+            </div>
+        </div>
     </section>
 
+    <!-- ###################### ABOUT PAGE ###################### -->
+    <section id="connect" class="section">
+
+    </section>
+
+
+    <script src="https://d3js.org/d3.v6.js"></script>
     <script src="/asset/js/gsap.min.js"></script>
+    <script src="/asset/js/skills.js"></script>
+    <script src="/asset/js/typing.js"></script>
     <script src="/asset/js/float.js"></script>
     <script src="/asset/js/main.js"></script>
 
