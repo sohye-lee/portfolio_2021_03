@@ -589,7 +589,6 @@ img {
 }
 
 .about__description {
-    /* color: var(--Gray) !important; */
     opacity: 0.6;
     transition: var(--Transition);
     font-weight: var(--Font-Weight-Regular);
@@ -599,7 +598,6 @@ img {
 }
 
 .about__description:hover {
-    /* color: var(--Highlight) !important; */
     opacity: 1;
 
 }
@@ -607,7 +605,6 @@ img {
 .about__text, .about__description {
     margin-bottom: .5rem;
     letter-spacing: var(--Spacing-Large);
-    /* font-weight: var(--Font-Weight-Light); */
     font-size: var(--Font-Size-Item);
 }
 
@@ -678,7 +675,6 @@ img {
     margin: 2rem;
 }
 
-
 .tooltip {
     margin: 2rem 0;
 }
@@ -710,3 +706,103 @@ img {
     }
 }
 
+ /* ###################### ABOUT PAGE ######################  */
+
+.connect__content {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.connect__quote {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.connect__details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.connect__details * {
+    text-align: right;
+}
+
+.quote__text {
+    font-size: calc(var(--Font-Size-Medium) *0.8);
+    margin-bottom: 1rem;
+    letter-spacing: var(--Spacing-Small);
+}
+
+.connect__title {
+    font-size: var(--Font-Size-Medium);
+    letter-spacing: var(--Spacing-Large);
+}
+
+.connect__subtitle  {
+    margin: 1.5rem 0;
+}
+
+.connect__subtitle * {
+    font-weight: var(--Font-Weight-Light);
+    letter-spacing: var(--Spacing-Small);
+    margin: .2rem;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+}
+
+.gray {
+    color: gray !important;
+}
+
+.connect__links {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 4rem;
+}
+
+@media all and (max-width: 1024px) {
+    .connect__content {
+        flex-direction: column;
+    }
+
+    .connect__details {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .connect__details * {
+        text-align: left;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .connect__quote * {
+        font-size: var(--Font-Size-Item);
+    }
+}
+
+
+ /* ###################### FOOTER ######################  */
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,479 @@
+/* .quote__text,
+.quote__text:hover {
+
+} */
+.quote__text span,
+.quote__text:hover span {
+  animation-name: anim-text-flow-keys;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes anim-text-flow-keys {
+  0% {
+    color: #d65c95;
+  }
+  5% {
+    color: #99d65c;
+  }
+  10% {
+    color: #955cd6;
+  }
+  15% {
+    color: #d65c6a;
+  }
+  20% {
+    color: #d65ca5;
+  }
+  25% {
+    color: #875cd6;
+  }
+  30% {
+    color: #d65cc2;
+  }
+  35% {
+    color: #5cc0d6;
+  }
+  40% {
+    color: #d65c74;
+  }
+  45% {
+    color: #95d65c;
+  }
+  50% {
+    color: #d65cc6;
+  }
+  55% {
+    color: #5c6ed6;
+  }
+  60% {
+    color: #70d65c;
+  }
+  65% {
+    color: #7ed65c;
+  }
+  70% {
+    color: #d65cc6;
+  }
+  75% {
+    color: #5cd65c;
+  }
+  80% {
+    color: #d6af5c;
+  }
+  85% {
+    color: #7ed65c;
+  }
+  90% {
+    color: #5cd678;
+  }
+  95% {
+    color: #5c85d6;
+  }
+  100% {
+    color: #c65cd6;
+  }
+}
+.quote__text span:nth-of-type(1),
+.quote__text:hover span:nth-of-type(1) {
+  animation-delay: -19.8s;
+}
+.quote__text span:nth-of-type(2),
+.quote__text:hover span:nth-of-type(2) {
+  animation-delay: -19.6s;
+}
+.quote__text span:nth-of-type(3),
+.quote__text:hover span:nth-of-type(3) {
+  animation-delay: -19.4s;
+}
+.quote__text span:nth-of-type(4),
+.quote__text:hover span:nth-of-type(4) {
+  animation-delay: -19.2s;
+}
+.quote__text span:nth-of-type(5),
+.quote__text:hover span:nth-of-type(5) {
+  animation-delay: -19s;
+}
+.quote__text span:nth-of-type(6),
+.quote__text:hover span:nth-of-type(6) {
+  animation-delay: -18.8s;
+}
+.quote__text span:nth-of-type(7),
+.quote__text:hover span:nth-of-type(7) {
+  animation-delay: -18.6s;
+}
+.quote__text span:nth-of-type(8),
+.quote__text:hover span:nth-of-type(8) {
+  animation-delay: -18.4s;
+}
+.quote__text span:nth-of-type(9),
+.quote__text:hover span:nth-of-type(9) {
+  animation-delay: -18.2s;
+}
+.quote__text span:nth-of-type(10),
+.quote__text:hover span:nth-of-type(10) {
+  animation-delay: -18s;
+}
+.quote__text span:nth-of-type(11),
+.quote__text:hover span:nth-of-type(11) {
+  animation-delay: -17.8s;
+}
+.quote__text span:nth-of-type(12),
+.quote__text:hover span:nth-of-type(12) {
+  animation-delay: -17.6s;
+}
+.quote__text span:nth-of-type(13),
+.quote__text:hover span:nth-of-type(13) {
+  animation-delay: -17.4s;
+}
+.quote__text span:nth-of-type(14),
+.quote__text:hover span:nth-of-type(14) {
+  animation-delay: -17.2s;
+}
+.quote__text span:nth-of-type(15),
+.quote__text:hover span:nth-of-type(15) {
+  animation-delay: -17s;
+}
+.quote__text span:nth-of-type(16),
+.quote__text:hover span:nth-of-type(16) {
+  animation-delay: -16.8s;
+}
+.quote__text span:nth-of-type(17),
+.quote__text:hover span:nth-of-type(17) {
+  animation-delay: -16.6s;
+}
+.quote__text span:nth-of-type(18),
+.quote__text:hover span:nth-of-type(18) {
+  animation-delay: -16.4s;
+}
+.quote__text span:nth-of-type(19),
+.quote__text:hover span:nth-of-type(19) {
+  animation-delay: -16.2s;
+}
+.quote__text span:nth-of-type(20),
+.quote__text:hover span:nth-of-type(20) {
+  animation-delay: -16s;
+}
+.quote__text span:nth-of-type(21),
+.quote__text:hover span:nth-of-type(21) {
+  animation-delay: -15.8s;
+}
+.quote__text span:nth-of-type(22),
+.quote__text:hover span:nth-of-type(22) {
+  animation-delay: -15.6s;
+}
+.quote__text span:nth-of-type(23),
+.quote__text:hover span:nth-of-type(23) {
+  animation-delay: -15.4s;
+}
+.quote__text span:nth-of-type(24),
+.quote__text:hover span:nth-of-type(24) {
+  animation-delay: -15.2s;
+}
+.quote__text span:nth-of-type(25),
+.quote__text:hover span:nth-of-type(25) {
+  animation-delay: -15s;
+}
+.quote__text span:nth-of-type(26),
+.quote__text:hover span:nth-of-type(26) {
+  animation-delay: -14.8s;
+}
+.quote__text span:nth-of-type(27),
+.quote__text:hover span:nth-of-type(27) {
+  animation-delay: -14.6s;
+}
+.quote__text span:nth-of-type(28),
+.quote__text:hover span:nth-of-type(28) {
+  animation-delay: -14.4s;
+}
+.quote__text span:nth-of-type(29),
+.quote__text:hover span:nth-of-type(29) {
+  animation-delay: -14.2s;
+}
+.quote__text span:nth-of-type(30),
+.quote__text:hover span:nth-of-type(30) {
+  animation-delay: -14s;
+}
+.quote__text span:nth-of-type(31),
+.quote__text:hover span:nth-of-type(31) {
+  animation-delay: -13.8s;
+}
+.quote__text span:nth-of-type(32),
+.quote__text:hover span:nth-of-type(32) {
+  animation-delay: -13.6s;
+}
+.quote__text span:nth-of-type(33),
+.quote__text:hover span:nth-of-type(33) {
+  animation-delay: -13.4s;
+}
+.quote__text span:nth-of-type(34),
+.quote__text:hover span:nth-of-type(34) {
+  animation-delay: -13.2s;
+}
+.quote__text span:nth-of-type(35),
+.quote__text:hover span:nth-of-type(35) {
+  animation-delay: -13s;
+}
+.quote__text span:nth-of-type(36),
+.quote__text:hover span:nth-of-type(36) {
+  animation-delay: -12.8s;
+}
+.quote__text span:nth-of-type(37),
+.quote__text:hover span:nth-of-type(37) {
+  animation-delay: -12.6s;
+}
+.quote__text span:nth-of-type(38),
+.quote__text:hover span:nth-of-type(38) {
+  animation-delay: -12.4s;
+}
+.quote__text span:nth-of-type(39),
+.quote__text:hover span:nth-of-type(39) {
+  animation-delay: -12.2s;
+}
+.quote__text span:nth-of-type(40),
+.quote__text:hover span:nth-of-type(40) {
+  animation-delay: -12s;
+}
+.quote__text span:nth-of-type(41),
+.quote__text:hover span:nth-of-type(41) {
+  animation-delay: -11.8s;
+}
+.quote__text span:nth-of-type(42),
+.quote__text:hover span:nth-of-type(42) {
+  animation-delay: -11.6s;
+}
+.quote__text span:nth-of-type(43),
+.quote__text:hover span:nth-of-type(43) {
+  animation-delay: -11.4s;
+}
+.quote__text span:nth-of-type(44),
+.quote__text:hover span:nth-of-type(44) {
+  animation-delay: -11.2s;
+}
+.quote__text span:nth-of-type(45),
+.quote__text:hover span:nth-of-type(45) {
+  animation-delay: -11s;
+}
+.quote__text span:nth-of-type(46),
+.quote__text:hover span:nth-of-type(46) {
+  animation-delay: -10.8s;
+}
+.quote__text span:nth-of-type(47),
+.quote__text:hover span:nth-of-type(47) {
+  animation-delay: -10.6s;
+}
+.quote__text span:nth-of-type(48),
+.quote__text:hover span:nth-of-type(48) {
+  animation-delay: -10.4s;
+}
+.quote__text span:nth-of-type(49),
+.quote__text:hover span:nth-of-type(49) {
+  animation-delay: -10.2s;
+}
+.quote__text span:nth-of-type(50),
+.quote__text:hover span:nth-of-type(50) {
+  animation-delay: -10s;
+}
+.quote__text span:nth-of-type(51),
+.quote__text:hover span:nth-of-type(51) {
+  animation-delay: -9.8s;
+}
+.quote__text span:nth-of-type(52),
+.quote__text:hover span:nth-of-type(52) {
+  animation-delay: -9.6s;
+}
+.quote__text span:nth-of-type(53),
+.quote__text:hover span:nth-of-type(53) {
+  animation-delay: -9.4s;
+}
+.quote__text span:nth-of-type(54),
+.quote__text:hover span:nth-of-type(54) {
+  animation-delay: -9.2s;
+}
+.quote__text span:nth-of-type(55),
+.quote__text:hover span:nth-of-type(55) {
+  animation-delay: -9s;
+}
+.quote__text span:nth-of-type(56),
+.quote__text:hover span:nth-of-type(56) {
+  animation-delay: -8.8s;
+}
+.quote__text span:nth-of-type(57),
+.quote__text:hover span:nth-of-type(57) {
+  animation-delay: -8.6s;
+}
+.quote__text span:nth-of-type(58),
+.quote__text:hover span:nth-of-type(58) {
+  animation-delay: -8.4s;
+}
+.quote__text span:nth-of-type(59),
+.quote__text:hover span:nth-of-type(59) {
+  animation-delay: -8.2s;
+}
+.quote__text span:nth-of-type(60),
+.quote__text:hover span:nth-of-type(60) {
+  animation-delay: -8s;
+}
+.quote__text span:nth-of-type(61),
+.quote__text:hover span:nth-of-type(61) {
+  animation-delay: -7.8s;
+}
+.quote__text span:nth-of-type(62),
+.quote__text:hover span:nth-of-type(62) {
+  animation-delay: -7.6s;
+}
+.quote__text span:nth-of-type(63),
+.quote__text:hover span:nth-of-type(63) {
+  animation-delay: -7.4s;
+}
+.quote__text span:nth-of-type(64),
+.quote__text:hover span:nth-of-type(64) {
+  animation-delay: -7.2s;
+}
+.quote__text span:nth-of-type(65),
+.quote__text:hover span:nth-of-type(65) {
+  animation-delay: -7s;
+}
+.quote__text span:nth-of-type(66),
+.quote__text:hover span:nth-of-type(66) {
+  animation-delay: -6.8s;
+}
+.quote__text span:nth-of-type(67),
+.quote__text:hover span:nth-of-type(67) {
+  animation-delay: -6.6s;
+}
+.quote__text span:nth-of-type(68),
+.quote__text:hover span:nth-of-type(68) {
+  animation-delay: -6.4s;
+}
+.quote__text span:nth-of-type(69),
+.quote__text:hover span:nth-of-type(69) {
+  animation-delay: -6.2s;
+}
+.quote__text span:nth-of-type(70),
+.quote__text:hover span:nth-of-type(70) {
+  animation-delay: -6s;
+}
+.quote__text span:nth-of-type(71),
+.quote__text:hover span:nth-of-type(71) {
+  animation-delay: -5.8s;
+}
+.quote__text span:nth-of-type(72),
+.quote__text:hover span:nth-of-type(72) {
+  animation-delay: -5.6s;
+}
+.quote__text span:nth-of-type(73),
+.quote__text:hover span:nth-of-type(73) {
+  animation-delay: -5.4s;
+}
+.quote__text span:nth-of-type(74),
+.quote__text:hover span:nth-of-type(74) {
+  animation-delay: -5.2s;
+}
+.quote__text span:nth-of-type(75),
+.quote__text:hover span:nth-of-type(75) {
+  animation-delay: -5s;
+}
+.quote__text span:nth-of-type(76),
+.quote__text:hover span:nth-of-type(76) {
+  animation-delay: -4.8s;
+}
+.quote__text span:nth-of-type(77),
+.quote__text:hover span:nth-of-type(77) {
+  animation-delay: -4.6s;
+}
+.quote__text span:nth-of-type(78),
+.quote__text:hover span:nth-of-type(78) {
+  animation-delay: -4.4s;
+}
+.quote__text span:nth-of-type(79),
+.quote__text:hover span:nth-of-type(79) {
+  animation-delay: -4.2s;
+}
+.quote__text span:nth-of-type(80),
+.quote__text:hover span:nth-of-type(80) {
+  animation-delay: -4s;
+}
+.quote__text span:nth-of-type(81),
+.quote__text:hover span:nth-of-type(81) {
+  animation-delay: -3.8s;
+}
+.quote__text span:nth-of-type(82),
+.quote__text:hover span:nth-of-type(82) {
+  animation-delay: -3.6s;
+}
+.quote__text span:nth-of-type(83),
+.quote__text:hover span:nth-of-type(83) {
+  animation-delay: -3.4s;
+}
+.quote__text span:nth-of-type(84),
+.quote__text:hover span:nth-of-type(84) {
+  animation-delay: -3.2s;
+}
+.quote__text span:nth-of-type(85),
+.quote__text:hover span:nth-of-type(85) {
+  animation-delay: -3s;
+}
+.quote__text span:nth-of-type(86),
+.quote__text:hover span:nth-of-type(86) {
+  animation-delay: -2.8s;
+}
+.quote__text span:nth-of-type(87),
+.quote__text:hover span:nth-of-type(87) {
+  animation-delay: -2.6s;
+}
+.quote__text span:nth-of-type(88),
+.quote__text:hover span:nth-of-type(88) {
+  animation-delay: -2.4s;
+}
+.quote__text span:nth-of-type(89),
+.quote__text:hover span:nth-of-type(89) {
+  animation-delay: -2.2s;
+}
+.quote__text span:nth-of-type(90),
+.quote__text:hover span:nth-of-type(90) {
+  animation-delay: -2s;
+}
+.quote__text span:nth-of-type(91),
+.quote__text:hover span:nth-of-type(91) {
+  animation-delay: -1.8s;
+}
+.quote__text span:nth-of-type(92),
+.quote__text:hover span:nth-of-type(92) {
+  animation-delay: -1.6s;
+}
+.quote__text span:nth-of-type(93),
+.quote__text:hover span:nth-of-type(93) {
+  animation-delay: -1.4s;
+}
+.quote__text span:nth-of-type(94),
+.quote__text:hover span:nth-of-type(94) {
+  animation-delay: -1.2s;
+}
+.quote__text span:nth-of-type(95),
+.quote__text:hover span:nth-of-type(95) {
+  animation-delay: -1s;
+}
+.quote__text span:nth-of-type(96),
+.quote__text:hover span:nth-of-type(96) {
+  animation-delay: -0.8s;
+}
+.quote__text span:nth-of-type(97),
+.quote__text:hover span:nth-of-type(97) {
+  animation-delay: -0.6s;
+}
+.quote__text span:nth-of-type(98),
+.quote__text:hover span:nth-of-type(98) {
+  animation-delay: -0.4s;
+}
+.quote__text span:nth-of-type(99),
+.quote__text:hover span:nth-of-type(99) {
+  animation-delay: -0.2s;
+}
+.quote__text span:nth-of-type(100),
+.quote__text:hover span:nth-of-type(100) {
+  animation-delay: 0s;
+}
+
+/*# sourceMappingURL=style2.css.map */
