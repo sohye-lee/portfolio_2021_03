@@ -31,8 +31,6 @@ window.onload = () => {
     colorMode = 'black'
     hiddenNav.style.display = 'none';
     hiddenNav.style.backgroundColor = 'rgba(0,0,0, .9)';
-
-    console.log(togglers);
 };
 
 // GSAP ANIMATIONS ON LOAD
