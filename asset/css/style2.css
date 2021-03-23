@@ -1,7 +1,4 @@
-/* .quote__text,
-.quote__text:hover {
-
-} */
+/* ANIMATION FOR QUOTE TEXT */
 .quote__text span,
 .quote__text:hover span {
   animation-name: anim-text-flow-keys;
