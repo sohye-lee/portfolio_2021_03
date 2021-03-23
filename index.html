@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/asset/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/asset/css/style2.css">
     <title>Sohye Lee, Developer</title>
 </head>
 <body>
@@ -13,30 +14,35 @@
     <!-- ###################### NAV BAR ###################### -->
     <nav class="header row center">
         <div class="header__content row between">
-            <a href="/"><div class="header__logo row center align-center"><h2 class="logo__center">S</h2><div class="logo__sphere bgchange">&nbsp;</div></div></a>
-            <ul class="header__items row right">
-                <li class="header__item"><a href="#projects">PROJECTS</a></li>
-                <li class="header__item"><a href="#about">ABOUT</a></li>
-                <li class="header__item"><a href="/asset/img/resume.pdf" download>RÉSUMÉ</a></li>
-                <li class="header__item"><a href="">CONNECT</a></li>
-                <li class="header__item header__toggler borderchange row left align-center">
-                    <div class="bgchange"></div>
-                </li>
-                
-            </ul>
-            <div class="header__burger">
-                <div class="bgchange burger1"></div>
-                <div class="bgchange burger2"></div>
+            <a href="/">
+                <div class="header__logo row center align-center">
+                    <h2 class="logo__center">S</h2>
+                    <div class="logo__sphere bgchange">&nbsp;</div>
+                </div>
+            </a>
+            <div class="row" >
+                <ul class="header__items row right">
+                    <li class="header__item"><a href="#projects">PROJECTS</a></li>
+                    <li class="header__item"><a href="#about">ABOUT</a></li>
+                    <li class="header__item"><a href="/asset/img/resume.pdf" download>RÉSUMÉ</a></li>
+                    <li class="header__item"><a href="#connect">CONNECT</a></li>
+                </ul>
+                <div class="row right">
+                    <div class="header__item header__toggler borderchange row left align-center">
+                        <div class="bgchange"></div>
+                    </div>
+                    <div class="header__burger">
+                        <div class="bgchange burger1"></div>
+                        <div class="bgchange burger2"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <ul class="header__hidden">
             <li class="item"><a href="#projects">PROJECTS</a></li>
             <li class="item"><a href="#about">ABOUT</a></li>
             <li class="item"><a href="/asset/img/resume.pdf" download>RÉSUMÉ</a></li>
-            <li class="item"><a href="">CONNECT</a></li>
-            <!-- <li class="item header__toggler borderchange row left align-center">
-                <div class="bgchange"></div>
-            </li> -->
+            <li class="item"><a href="#connect">CONNECT</a></li>
         </ul>
     </nav>
 
@@ -56,6 +62,9 @@
             </canvas>
         </div>
         <div class="main__arrow"></div>
+        <div class="up__arrow">
+            <img src="/asset/img/arrowUp.png" />
+        </div>
     </section>
 
     <!-- ###################### PROJECTS PAGE ###################### -->
@@ -91,26 +100,50 @@
             </h4>
             <div class="row right">
                 <button class="project__button">
-                    <a href="https://www.github.com/sohye-lee" class="item"> GITHUB</a>
+                    <a href="https://www.github.com/sohye-lee/pen" class="item" target="blank"> GITHUB</a>
                 </button>
                 <button class="project__button margin__left">
-                    <a href="https://www.github.com/sohye-lee" class="item">SEE LIVE</a>
+                    <a href="https://www.github.com/sohye-lee" class="item" target="blank" disabled>SEE LIVE <br>comming soon</a>
                 </button>
             </div>
         </div>
         <div class="project__carousel">
             <div class="carousel__wrapper row left">
                 <div class="project__image">
-                    <img src="/asset/img/project-taude/web1.png">
-                    <div class="project__comment item">front page</div>
+                    <img src="/asset/img/project-pen/web1.png">
+                    <div class="project__comment">main page with featured contents section, scrolling down</div>
                 </div>
                 <div class="project__image">
-                    <img src="/asset/img/project-taude/web1.png">
-                    <div class="project__comment item">front page</div>
+                    <img src="/asset/img/project-pen/web3.png">
+                    <div class="project__comment">posting page</div>
                 </div>
                 <div class="project__image">
-                    <img src="/asset/img/project-taude/web1.png">
-                    <div class="project__comment item">front page</div>
+                    <img src="/asset/img/project-pen/web4.png">
+                    <div class="project__comment">like & unlike and leave & edit comment</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-pen/web5.png">
+                    <div class="project__comment">user's dropdown menu</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-pen/web6.png">
+                    <div class="project__comment">user's private content dashboard</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-pen/web7.png">
+                    <div class="project__comment">update blog form</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-pen/web8.png">
+                    <div class="project__comment">admin access - user list</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-pen/web9.png">
+                    <div class="project__comment">admin access - content list</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-pen/web10.png">
+                    <div class="project__comment">admin access - category handling page</div>
                 </div>
             </div>
         </div>
@@ -143,10 +176,10 @@
             </h4>
             <div class="row left">
                 <button class="project__button margin__right">
-                    <a href="https://www.github.com/sohye-lee" class="item"> GITHUB</a>
+                    <a href="https://www.github.com/sohye-lee" class="item" target="blank"> GITHUB</a>
                 </button>
                 <button class="project__button margin__left">
-                    <a href="https://www.github.com/sohye-lee" class="item">SEE LIVE</a>
+                    <a href="https://www.github.com/sohye-lee" class="item" target="blank">SEE LIVE</a>
                 </button>
             </div>
         </div>
@@ -154,33 +187,218 @@
             <div class="carousel__wrapper row">
                 <div class="project__image">
                     <img src="/asset/img/project-taude/web1.png">
-                    <div class="project__comment">front page</div>
-                </div>
-                <div class="project__image">
-                    <img src="/asset/img/project-taude/web2.png">
-                    <div class="project__comment">front page</div>
-                </div>
-                <div class="project__image">
-                    <img src="/asset/img/project-taude/web3.png">
-                    <div class="project__comment">front page</div>
-                </div>
-                <div class="project__image">
-                    <img src="/asset/img/project-taude/web-admin1.png">
-                    <div class="project__comment">front page</div>
-                </div>
-                <div class="project__image">
-                    <img src="/asset/img/project-taude/web-admin2.png">
-                    <div class="project__comment">front page</div>
+                    <div class="project__comment">front page with list of products (rating)</div>
                 </div>
                 <div class="project__image">
                     <img src="/asset/img/project-taude/ipad1.jpg">
-                    <div class="project__comment">front page</div>
+                    <div class="project__comment">product page on tablet</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web2.png">
+                    <div class="project__comment">product page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web3.png">
+                    <div class="project__comment">shopping cart with edit function</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web-admin1.png">
+                    <div class="project__comment">admin dashboard - users, orders, products summary</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-taude/web-admin2.png">
+                    <div class="project__comment">admin view - product page</div>
                 </div>
             </div>
         </div>
 
         <!-- PROJECT 3 -->
+        <div class="project__details right">
+            <div class="project__num row right">
+                <h3 class="need__devider item">project 3</h3>
+                <h3 class="item">salaad</h3>
+            </div>
+            <div class="bar short bgchange"></div>
+            <h2 class="project__title">
+                Responsive Web & App
+            </h2>
+            <div class="bar long bgchange"></div>
+            <div class="project__skills row right">
+                <h3 class="item">JAVASCRIPT</h3>
+                <h3 class="item">BOOTSTRAP</h3>
+                <h3 class="item">REACT NATIVE</h3><br>
+                <h3 class="item">NODEJS</h3>
+                <h3 class="item">EXPRESS</h3>
+                <h3 class="item">MONGODB</h3>
+            </div>
+            <div class="bar long bgchange"></div>
+            <h4 class="project__description right">
+                Fully Responsive. <br>
+                Like & Comment (app). <br>
+                Bright/Dark Mode. 
+            </h4>
+            <div class="row right">
+                <button class="project__button">
+                    <a href="https://www.github.com/sohye-lee/salaad" class="item" target="blank"> GITHUB</a>
+                </button>
+                <button class="project__button margin__left">
+                    <a href="https://salaad.netlify.com" class="item" target="blank">SEE LIVE</a>
+                </button>
+            </div>
+        </div>
+        <div class="project__carousel">
+            <div class="carousel__wrapper row left">
+                <div class="project__image">
+                    <img src="/asset/img/project-salaad/web1.png">
+                    <div class="project__comment item">front page / bright mode</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-salaad/web2.png">
+                    <div class="project__comment item">front page / dark mode</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-salaad/ipad2.png">
+                    <div class="project__comment item">on tablet</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-salaad/web3.png">
+                    <div class="project__comment item">menu cards</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-salaad/web4.png">
+                    <div class="project__comment item">service summary</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-salaad/web5.png">
+                    <div class="project__comment item">review slides</div>
+                </div>
+
+            </div>
+        </div>
+
         <!-- PROJECT 4 -->
+        <div class="project__details">
+            <div class="project__num row left">
+                <h3 class="need__devider item">project 4</h3>
+                <h3 class="item">movist</h3>
+            </div>
+            <div class="bar short bgchange"></div>
+            <h2 class="project__title">
+                Movie Search Web With Movie API
+            </h2>
+            <div class="bar long bgchange"></div>
+            <div class="project__skills row left">
+                <h3 class="item">REACT</h3>
+                <h3 class="item">BOOTSTRAP</h3>
+                <h3 class="item">DB API</h3>
+            </div>
+            <div class="bar long bgchange"></div>
+            <h4 class="project__description left">
+                Fully Responsive.<br>
+                Fetch Movie Database API.<br>
+                Search Function.
+            </h4>
+            <div class="row left">
+                <button class="project__button margin__right">
+                    <a href="https://www.github.com/sohye-lee/movist" class="item" target="blank"> GITHUB</a>
+                </button>
+                <button class="project__button margin__left">
+                    <a href="https://movist.netlify.app" class="item" target="blank">SEE LIVE</a>
+                </button>
+            </div>
+        </div>
+        <div class="project__carousel row">
+            <div class="carousel__wrapper row">
+                <div class="project__image">
+                    <img src="/asset/img/project-movist/web1.png">
+                    <div class="project__comment">main page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-movist/ipad1.png">
+                    <div class="project__comment">main page on tablet</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-movist/web2.png">
+                    <div class="project__comment">movie list with cards animated</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-movist/ipad2.png">
+                    <div class="project__comment">movie list on tablet</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-movist/web5.png">
+                    <div class="project__comment">search function</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-movist/web3.png">
+                    <div class="project__comment">movie detail page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-movist/web4.png">
+                    <div class="project__comment">actors list</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PROJECT 5 -->
+        <div class="project__details right">
+            <div class="project__num row right">
+                <h3 class="need__devider item">project 5</h3>
+                <h3 class="item">transia</h3>
+            </div>
+            <div class="bar short bgchange"></div>
+            <h2 class="project__title">
+                Responsive Company SPA
+            </h2>
+            <div class="bar long bgchange"></div>
+            <div class="project__skills row right">
+                <h3 class="item">REACT</h3>
+                <h3 class="item">BOOTSTRAP</h3>
+            </div>
+            <div class="bar long bgchange"></div>
+            <h4 class="project__description right">
+                Fully Responsive <br>
+                SPA Built With React <br>
+                Form Validation
+            </h4>
+            <div class="row right">
+                <button class="project__button margin__right">
+                    <a href="https://www.github.com/sohye-lee/movist" class="item" target="blank"> GITHUB</a>
+                </button>
+                <button class="project__button margin__left">
+                    <a href="https://transia.netlify.com" class="item" target="blank">SEE LIVE</a>
+                </button>
+            </div>
+        </div>
+        <div class="project__carousel row">
+            <div class="carousel__wrapper row">
+                <div class="project__image">
+                    <img src="/asset/img/project-transia/web1.png">
+                    <div class="project__comment">front page</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-transia/web2.png">
+                    <div class="project__comment">service summary with cards flipping</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-transia/web3.png">
+                    <div class="project__comment">staff introduction with emailing enabled</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-transia/web4.png">
+                    <div class="project__comment">partners introduction with moving slids</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-transia/web5.png">
+                    <div class="project__comment">contact form with form validation</div>
+                </div>
+                <div class="project__image">
+                    <img src="/asset/img/project-transia/web6.png">
+                    <div class="project__comment">quote request modal</div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -214,7 +432,7 @@
                         <span class="typing typing3"></span>
                         <div class="blinking bgchange"></div>
                     </h4>
-                    <p class="about__description">Interest in Arts & Data Management</p>
+                    <p class="about__description">Experience in Arts & Data Management</p>
                 </div>
             </div>
             <div class="about__bubble">
@@ -230,9 +448,40 @@
     </section>
 
     <!-- ###################### ABOUT PAGE ###################### -->
-    <section id="connect" class="section">
-
+    <section id="connect" >
+        <div class="section__content connect__content">
+            <div class="connect__quote">
+                <p class="quote__text">
+                    Try to be a rainbow in someone's cloud.
+                </p>
+                <p class="quote__text">
+                    - Maya Angelou.
+                </p>
+            </div>
+            <div class="connect__details">
+                <h3 class="connect__title gray">SOHYE LEE</h3>
+                <div class="connect__subtitle">
+                    <h3 class="gray">Web Developer</h3>
+                    <h3 class="gray">Fairfax, Virginia, USA</h3>
+                </div>
+                <div class="connect__subtitle">
+                    <h3 class="gray">If you need to talk to me,</h3>
+                    <h3 class="gray">please email to</h3>
+                </div>
+                <div class="connect__subtitle">
+                    <a href="mailto:sohyelee@gmail.com">sohyelee@gmail.com</a>
+                </div>
+                <div class="connect__links">
+                    <p class="item need__devider"><a href="https://www.linkedin.com/in/sohyelee" target="blank">LINKEDIN</a></p>
+                    <p class="item need__devider"><a href="https://www.github.com/sohye-lee" target="blank">GITHUB</a></p>
+                    <p class="item"><a href="https://www.facebook.com/about.sohye.lee" target="blank">FACEBOOK</a></p>
+                </div>
+            </div>
+        </div>
     </section>
+    <footer>
+        <p class="header__item">© 2021 SOHYE LEE. All rights reserved.</p>
+    </footer>
 
 
     <script src="https://d3js.org/d3.v6.js"></script>
@@ -242,5 +491,8 @@
     <script src="/asset/js/float.js"></script>
     <script src="/asset/js/main.js"></script>
 
+    
+
+    
 </body>
 </html>

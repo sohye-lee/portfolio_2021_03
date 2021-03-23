@@ -41,13 +41,18 @@ const generateChart = data => {
         .attr('r', d => d.r)
         .style('fill', d => colors[d.data.id])
         .on('mouseover', function(e, d) {
-            tooltip.select('.tooltip__skill').text(`${d.data.name} `);
+            tooltip.select('.tooltip__skill').text(`${d.data.name}`);
             tooltip.select('.tooltip__graph').style('background-color', 'gray');
             tooltip.select('.tooltip__graph')
                 .select('.graph__inner')
-                .style('width', `${d.data.score*1.2}px`)
+                .style('width', `${d.data.score*2}px`)
                 .style('background-color', colorMode==='white' ? 'black' : 'white')
-            d3.select(this).style('stroke', 'white')
+            d3.select(this)
+                .style('stroke', colorMode==='white' ? 'var(--DarkGray)' : 'white')
+                .attr('stroke-width','3px');
+                
+
+            // label.select(this).attr('fill', colorMode);
         })
         .on('mouseout', function(e, d) {
             d3.select(this).style('stroke', 'none');
@@ -75,9 +80,6 @@ function generateColor (value) {
     const opacity = value / 70 + 0.3;
     return `rgba(${r},${g},${b},${opacity})`;
 }
-
-// SKILL LEVER INDICATOR
-// function 
 
 
 // RESIZE HANDLER

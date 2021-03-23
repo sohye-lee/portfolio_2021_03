@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sohye-lee/portfolio_2021_03/issues"
   },
-  "homepage": "https://github.com/sohye-lee/portfolio_2021_03#readme"
+  "homepage": "https://github.com/sohye-lee/portfolio_2021_03#readme",
+  "dependencies": {
+    "php": "^1.0.1"
+  }
 }

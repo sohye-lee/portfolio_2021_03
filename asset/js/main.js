@@ -8,6 +8,8 @@ const hiddenNav = document.querySelector('.header__hidden');
 const mainPage = document.getElementById('main');
 const buttons = document.querySelectorAll('button');
 const arrowDown = document.querySelector('.main__arrow');
+const arrowUp = document.querySelector('.up__arrow');
+let   quotes = document.querySelectorAll('.quote__text');
 var img = document.createElement('img');
 var colorMode = 'black';
 
@@ -29,6 +31,8 @@ window.onload = () => {
     colorMode = 'black'
     hiddenNav.style.display = 'none';
     hiddenNav.style.backgroundColor = 'rgba(0,0,0, .9)';
+
+    console.log(togglers);
 };
 
 // GSAP ANIMATIONS ON LOAD
@@ -117,13 +121,20 @@ window.addEventListener('scroll', () => {
             header.classList.add('white');
         }
         arrowDown.style.display = 'none';
+        arrowUp.style.display = 'block';
     } else {
         header.classList.remove('white');
         header.classList.remove('black');
         arrowDown.style.display = 'block';
+        arrowUp.style.display = 'none';
     }
 });
 
+
+// ARROW UP BUTTON EVENT HANDLER
+arrowUp.addEventListener('click', () => {
+    window.scrollTo(0,0);
+});
 
 // BURGER EFFECT
 
@@ -142,6 +153,7 @@ burger.addEventListener('click', () => {
         }
     } else {
         burger.classList.add('clicked');
+        // modeToggler = togglers[1];
         for (let i=0; i<bars.length;i++) {
             bars[i].classList.add('clicked');
         }
@@ -154,6 +166,22 @@ burger.addEventListener('click', () => {
     }
 })
 
+// QUOTE EFFECT
+quotes.forEach(quote => {
+    let letters = quote.textContent.split("");
+    quote.textContent = "";
+    letters.forEach((letter, i) => {
+        let span = document.createElement("span");
+        span.textContent = letter;
+        span.style.animationDelay = `${i * 0.05}s`;
+        quote.append(span);
+    });
+});
+
+
+
+
+// RESIZE 
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 1024) {
         hiddenNav.style.display = 'none';
