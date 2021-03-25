@@ -13,29 +13,15 @@ let   quotes = document.querySelectorAll('.quote__text');
 var img = document.createElement('img');
 var colorMode = 'black';
 
-const about = document.getElementById('about');
 
-// window.addEventListener('scroll', () => {
-
-//         if((about.getBoundingClientRect().top < 900) && (about.getBoundingClientRect().top > -600)) {
-//             about.classList.add('fadein');
-//             console.log(about.getBoundingClientRect().top)
-//         } else {
-//             about.classList.remove('fadein')
-//             console.log(about.getBoundingClientRect().top)
-//         }
-// });
-
+// FADE IN OUT EFFECT WItH SCROLL
 const toShowItems = document.querySelectorAll('.fadeinout');
-
 window.addEventListener('scroll', () => {
     toShowItems.forEach(section => {
         if((section.getBoundingClientRect().top < 900) && (section.getBoundingClientRect().top > -600)) {
             section.classList.add('fadein');
-            // console.log(about.getBoundingClientRect().top)
         } else {
             section.classList.remove('fadein')
-            // console.log(about.getBoundingClientRect().top)
         }
     })
 
@@ -208,8 +194,6 @@ quotes.forEach(quote => {
         quote.append(span);
     });
 });
-
-
 
 
 // RESIZE 
