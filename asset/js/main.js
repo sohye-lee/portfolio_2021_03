@@ -13,8 +13,36 @@ let   quotes = document.querySelectorAll('.quote__text');
 var img = document.createElement('img');
 var colorMode = 'black';
 
+const about = document.getElementById('about');
+
+// window.addEventListener('scroll', () => {
+
+//         if((about.getBoundingClientRect().top < 900) && (about.getBoundingClientRect().top > -600)) {
+//             about.classList.add('fadein');
+//             console.log(about.getBoundingClientRect().top)
+//         } else {
+//             about.classList.remove('fadein')
+//             console.log(about.getBoundingClientRect().top)
+//         }
+// });
+
+const toShowItems = document.querySelectorAll('.fadeinout');
+
+window.addEventListener('scroll', () => {
+    toShowItems.forEach(section => {
+        if((section.getBoundingClientRect().top < 900) && (section.getBoundingClientRect().top > -600)) {
+            section.classList.add('fadein');
+            // console.log(about.getBoundingClientRect().top)
+        } else {
+            section.classList.remove('fadein')
+            // console.log(about.getBoundingClientRect().top)
+        }
+    })
+
+})
+
 // SET THE INITIAL COLOR MODE TO BLACK WHEN LOAD
-window.onload = () => {
+window.onload =  () => {
     body.classList.add('mode__black');
     for (let i=0;i<bgchangeItems.length;i++) {
         bgchangeItems[i].classList.add('white');
@@ -105,6 +133,8 @@ modeToggler.addEventListener('click', () => {
         header.classList.remove('white');
         header.classList.remove('black');
     }
+
+    
 });
 
 // ON SCROLL NAV BACKGROUND
@@ -126,6 +156,7 @@ window.addEventListener('scroll', () => {
         arrowDown.style.display = 'block';
         arrowUp.style.display = 'none';
     }
+
 });
 
 
@@ -162,6 +193,8 @@ burger.addEventListener('click', () => {
             header.classList.add('white');
         }
     }
+
+    
 })
 
 // QUOTE EFFECT

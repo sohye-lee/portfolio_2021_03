@@ -87,10 +87,14 @@ html {
 }
 
 body {
-    /* background-color: var(--Black); */
+    background-color: var(--Black);
     font-family: var(--Font-Main);
     font-size: var(--Font-Size-Small);
-    /* color: var(--White); */
+    color: var(--White);
+}
+
+body * {
+    color: var(--White);
 }
 
 h1 {
@@ -197,6 +201,16 @@ img {
 
 /* CLASS SETTING */
 
+.fadeinout {
+    opacity: 0.1;
+    transition: all ease 2s;
+    transform: translateY(10rem);
+}
+.fadeinout.fadein {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .mode__black {
     background-color: var(--Black);
     color: var(--White);
@@ -227,6 +241,7 @@ img {
     width: 100vw;
     min-height: 100vh;
 }
+
 
 .section__content {
     max-width: var(--Max-Width);
@@ -325,6 +340,32 @@ img {
         opacity: .1;
     }
 }
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+} */
+/* 
+.fadeIn {
+    animation: fadeIn ease 2s;
+}
+
+.fadeOut {
+    animation: fadeOut ease 2s;
+} */
 
  /* ###################### NAV BAR ######################  */
 
@@ -608,6 +649,11 @@ img {
 
 
  /* ###################### ABOUT PAGE ######################  */
+
+#about.fadein {
+    opacity: 1;
+}
+
 .about__head {
     width: 80%;
     min-width: 300px;
@@ -857,6 +903,19 @@ a {
 @media all and (max-width: 768px) {
     .connect__quote * {
         font-size: 1.3rem;
+        font-size: var(--Font-Size-Small);
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 380px) {
+    .connect__subtitle {
+        margin: 0.5rem 0;
     }
 }
 
@@ -869,4 +928,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media all and (max-width: 768px) {
+    .footer {
+        position: relative;
+        margin-top: 10rem;
+
+    }
 }
